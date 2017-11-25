@@ -1,5 +1,5 @@
 {
-    "name": "Microservices_Stubs",
+    "name": "microservicesstubs",
     "version": "0.0.0",
     "description": "Microservices_Stubs",
     "main": "index.js",
@@ -8,10 +8,10 @@
         "start": "node server.js"
     },
     "keywords": [
-    "angularjs",
-    "jwt",
-    "authentication"
-  ],
+        "angularjs",
+        "jwt",
+        "authentication"
+    ],
     "author": "",
     "license": "MIT",
     "devDependencies": {

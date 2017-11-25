@@ -1,0 +1,23 @@
+{
+    "name": "Microservices_stubs_fe",
+    "version": "0.0.0",
+    "authors": [
+      ""
+    ],
+    "description": "Microservices_stubs_fe",
+    "keywords": [
+      "angularjs",
+      "jwt",
+      "authentication"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests"
+    ]
+  }
+  

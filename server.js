@@ -44,8 +44,58 @@ appRouter.post('/login', authenticate, function (req, res) {
     console.log(timeStampInMs);
     console.log(timeStampInMsRefreshToken);
 
+    // var payload = [{
+    //     "payload": [{
+    //         "userId": userId,
+    //         "errorCode": "",
+    //         "nextScreenCode": {
+    //             "mobCode": "3.2",
+    //             "webCode": "3.2"
+    //         },
+    //         "backData": {
+    //             "3.0": {
+    //                 "id": 0,
+    //                 "nik": null,
+    //                 "fullName": null,
+    //                 "preferredName": null,
+    //                 "professionCode": null,
+    //                 "npwp": null,
+    //                 "userId": 0,
+    //                 "highRisk": false
+    //             },
+    //             "3.1": [
+    //                 {
+    //                     "id": null,
+    //                     "address": "JL. GALUR SARI NO. 7",
+    //                     "districtOrCity": "MATRAMAN",
+    //                     "neighbourhood": "5/7",
+    //                     "village": "UTAN KAYU UTARA",
+    //                     "subDistrict": "MATRAMAN",
+    //                     "postalCode": null,
+    //                     "province": "DKI JAKARTA",
+    //                     "addressType": "Registered"
+    //                 }
+    //             ]
+    //         },
+    //         "tokens": {
+    //             "accessToken": accessToken,
+    //             "expiresIn": 180,
+    //             "refreshExpiresIn": 360,
+    //             "refreshToken": refreshToken,
+    //             "tokenType": "bearer",
+    //             "sessionState": "2ac48b88-cfbb-46ee-8bfa-03f2eb5bfa4b",
+    //             "primaryAuth": true
+    //         },
+    //         "editedByUser": false,
+    //         "highRisk": false
+    //     }],
+    //     "errors": [],
+    //     "correlationId": "ShwetaTesting",
+    //     "timeStamp": "2017-11-24T22:11:17.612",
+    //     "success": true
+    // }];
+
     var payload = [{
-        "payload": [{
             "userId": userId,
             "errorCode": "",
             "nextScreenCode": {
@@ -88,16 +138,15 @@ appRouter.post('/login', authenticate, function (req, res) {
             },
             "editedByUser": false,
             "highRisk": false
-        }],
-        "errors": [],
-        "correlationId": "ShwetaTesting",
-        "timeStamp": "2017-11-24T22:11:17.612",
-        "success": true
     }];
 
     res.send({
         success: "true",
-        payload: payload
+        payload: payload,
+        errors: [],
+        correlationId: "ShwetaTesting",
+        timeStamp: "2017-11-24T22:11:17.612",
+        success: true
     });
 });
 
